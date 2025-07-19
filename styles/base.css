@@ -40,7 +40,7 @@ nav a {
 
 nav a:hover {
     color: rgb(75, 231, 228);
-    text-decoration: overline;
+    border-bottom: 2px solid rgb(75, 231, 228);
 }
 
 h1 {
@@ -80,10 +80,10 @@ h1 {
     align-items: stretch;
 
     max-width: 1000px;
-    /* Limita el ancho total */
+    
     margin: 0 auto;
     padding: 1.5rem;
-    /* Centra horizontalmente */
+   
 }
 
 .me {
@@ -106,7 +106,7 @@ h1 {
     margin-right: 2rem
 }
 
-/*dera a la izquierd*/
+
 .country h2 {
     font-size: 1.5rem;
     margin-bottom: 0.2rem;
@@ -200,68 +200,3 @@ footer p {
     font-size: 15px;
 }
 
-@media screen and (max-width: 768px) {
-    .cards {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-        gap: 2rem;
-    }
-
-    .about-me,
-    .web-resources {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .me {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .me p {
-        padding: 0.2rem;
-    }
-
-    .profile {
-        width: 120px;
-        height: auto;
-        margin: 0;
-    }
-
-    .flag-peru {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .flag-peru img {
-        width: 120px;
-    }
-
-    .card-title {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        border-radius: 10px 10px 0 0;
-    }
-
-    nav {
-        gap: 1rem;
-        padding: 0.5rem;
-    }
-
-    nav a {
-        font-size: 16px;
-        padding: 0.5rem 1rem;
-    }
-
-    h1 {
-        font-size: 24px;
-        padding: 0 1rem;
-    }
-
-    .card-content ul {
-        padding: 1rem;
-    }
-}
