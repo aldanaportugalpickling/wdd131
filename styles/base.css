@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(239, 237, 237);
+    font-size: 1rem;
+}
+
+header span {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: rgb(194, 53, 128);
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 13%;
+    background-color: #333;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: rgb(75, 231, 228);
+    text-decoration: overline;
+}
+
+h1 {
+    color: rgb(194, 53, 128);
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.card-title {
+    background-color: rgb(194, 53, 128);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    width: calc(100% + 3rem);
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 4rem;
+    align-items: stretch;
+
+    max-width: 1000px;
+    /* Limita el ancho total */
+    margin: 0 auto;
+    padding: 1.5rem;
+    /* Centra horizontalmente */
+}
+
+.me {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.me p {
+    flex: 1;
+    padding: 1rem;
+}
+
+.profile {
+    width: 150px;
+    height: auto;
+    margin-top: 1rem;
+    margin-right: 2rem
+}
+
+/*dera a la izquierd*/
+.country h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+
+.line {
+    width: 40%;
+    margin: 0 auto 1.5rem auto;
+    border: 1px solid #ccc;
+}
+
+.flag-peru {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.flag-peru img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #444;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.flag-peru p {
+    flex: 1;
+}
+
+.about-me {
+    background-color: rgba(213, 213, 213, 0.66);
+    border: 1px solid rgba(185, 167, 167, 0.651);
+    border-radius: 10px;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    height: 100%;
+
+}
+
+.web-resources {
+    background-color: rgba(213, 213, 213, 0.66);
+    border: 1px solid rgba(185, 167, 167, 0.651);
+    border-radius: 10px;
+    height: 100%;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+
+}
+
+.card-content ul {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: center;
+    gap: 2px;
+    padding: 1rem;
+    min-height: 300px;
+
+
+}
+
+.card-content a {
+
+    display: block;
+    padding: 0.2rem;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: rgb(194, 53, 128);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 15px;
+}
+
+footer p {
+    font-size: 18px;
+    padding: 2px;
+
+}
+
+#lastModified {
+    color: yellow;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .about-me,
+    .web-resources {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .me {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .me p {
+        padding: 0.2rem;
+    }
+
+    .profile {
+        width: 120px;
+        height: auto;
+        margin: 0;
+    }
+
+    .flag-peru {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .flag-peru img {
+        width: 120px;
+    }
+
+    .card-title {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 10px 10px 0 0;
+    }
+
+    nav {
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 0.5rem 1rem;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding: 0 1rem;
+    }
+
+    .card-content ul {
+        padding: 1rem;
+    }
+}
