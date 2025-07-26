@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: white;
+
+}
+
+header {
+    background-color: rgb(49, 10, 128);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.header-right {
+    margin-left: auto;
+}
+
+
+#course-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#menu-button {
+    display: none;
+}
+
+
+#menu-button {
+    display: block;
+    font-size: 1.5rem;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+nav ul.navigation {
+    list-style-type: none;
+    display: flex;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+
+
+    display: block;
+    text-align: center;
+
+}
+
+nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+
+h1 {
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 2rem;
+
+}
+
+.gallery h2 {
+    position: absolute;
+    left: -10000px;
+}
+
+
+
+footer {
+    background-color: rgb(49, 10, 128);
+    color: white;
+    padding: 1rem;
+}
+
+footer p {
+    font-size: 18px;
+    text-align: center;
+}
+
+#lastModified {
+    font-size: 15px;
+}
+
+@media (min-width: 640px) {
+    #menu-button {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 1.5rem 2rem;
+      
+    }
+
+    .header-left {
+        flex: 1;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+        width: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        gap: 1rem;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        padding: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .gallery figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px 150px;
+    }
+    
+    figcaption {
+        margin-top: 0.5rem;
+        font-size: 16px;
+        color: #962290;
+        text-align: center;
+    }
+    
+
+}
