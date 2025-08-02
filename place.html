@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Country page - Aldana Andrea Portugal Pickling</title>
+
+    <meta name="description" content="WDD 131 Aldana Andrea Portugal Pickling Country page">
+    <meta name="author" content="Aldana Andrea Portugal Pickling">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>PARIS: EIFFEL TOWER</h1>
+    </header>
+
+
+    <main>
+        <section class="hero">
+
+            <picture>
+                <source srcset="images/paris-large.webp" media="(min-width: 768px)" />
+                <source srcset="images/paris-small.webp" media="(max-width: 767px)" />
+                <img src="images/paris-small.webp" alt="view of the Eiffel Tower" width="400" height="300" />
+            </picture>
+           
+            <!-- Photo 1 by Eugene Dorosh: https://www.pexels.com/es-es/foto/739407/
+            Photo 2 by Stefanie Jockschat: https://www.pexels.com/es-es/foto/la-torre-eiffel-en-verano-30911731/
+            Licensed under the Pexels License: https://www.pexels.com/license/  -->
+    
+        </section>
+
+        <section class="data">
+            <h2>Location Data</h2>
+            <p><strong>Current Location: </strong> Paris, France</p>
+            <p><strong>Official Language: </strong> French</p>
+            <p><strong>Currency: </strong> Euro (€)</p>
+            <p><strong>Tower Height: </strong> 330 meters</p>
+            <p><strong>Inauguration Year: </strong> 1889</p>
+            <p><strong>Calling Code: </strong> +33</p>
+            <p><strong>Time Zone: </strong> Central European Time (CET, UTC+2)</p>
+            <hr class="divider">
+          
+        </section>
+        
+        <section class="weather">
+            <h2>
+                Weather
+                <img class="icon-large" src="images/weather-icon.svg" alt="High temperature icon" width="40" height="40">
+                
+            </h2>
+            <p><strong>Temperature: </strong><span id="temp">--</span>°C</p>
+            <p><strong>Conditions: </strong><span id="condition">--</span></p>
+            <p><strong>Wind: </strong><span id="wind">--</span> km/h</p>
+            <p><strong>Wind Chill: </strong><span id="chill">--</span>°C</p>
+        </section>
+    </main>
+
+    <footer> 
+        <p>&copy; <span id="currentyear"></span>💎 Aldana Andrea Portugal Pickling 💎 Peru </p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

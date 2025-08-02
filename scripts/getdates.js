@@ -10,4 +10,3 @@ let time = oLastModif.toLocaleTimeString("en-GB", {
 });
 
 document.getElementById("lastModified").textContent = `Last Modified: ${date} ${time}`;
-
