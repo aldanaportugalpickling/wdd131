@@ -34,13 +34,16 @@ header {
 
 .data,
 .weather {
-    position: absolute;
+    position: relative;
     background-color: rgba(201, 201, 201, 0.5);
     padding: 2rem;
     color: var(--third-color);
     border-radius: 8px;
     max-width: 400px;
-    box-shadow: 0 0 20px
+    box-shadow: 0 0 20px;
+
+
+    width: clamp(250px, 80%, 400px);
 }
 
 /*nuevo*/

@@ -65,10 +65,11 @@
     }
 
     .weather h2::after {
-        content: "🌡️";
-        margin-left: 0.5rem;
-        font-size: 1.5rem;
-        vertical-align: middle;
+        content: "☀️";
+        display: block;
+        text-align: center;
+        margin-top: 0.5rem;
+        font-size: 2rem;
     }
 
     .weather {
