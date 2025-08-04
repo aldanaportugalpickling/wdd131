@@ -65,13 +65,15 @@
     }
 
     .icon-large {
-        display: block;
+        display: block !important;
         margin: 0 auto 1rem auto;
         margin-top: 10px;
     }
         
+    .weather h2::after{
+        display: none;
 
-
+    }
     .visually-hidden {
         position: absolute;
         width: 1px;
