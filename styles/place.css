@@ -64,24 +64,12 @@
         border-radius: 2px;
     }
 
-    .weather h2::after {
-        content: "☀️";
-        display: block;
-        text-align: center;
-        margin-top: 0.5rem;
-        font-size: 2rem;
-    }
-
-    .weather {
-        margin-top: 1rem;
-    }
-
     .icon-large {
-        display: none !important;
-        visibility: hidden;
-        width: 0;
-        height: 0;
+        display: block;
+        margin: 0 auto 1rem auto;
+        margin-top: 10px;
     }
+        
 
 
     .visually-hidden {

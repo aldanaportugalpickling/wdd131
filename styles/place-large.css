@@ -87,7 +87,7 @@ header {
     display: none;
 }
 .weather h2 {
-    content: "";
+    content: "🌡️";
     margin-left: 0.5rem;
     font-size: 1.5rem;
     vertical-align: middle;
@@ -96,11 +96,16 @@ header {
     font-family: 'Ubuntu',sans-serif;
 
 }
-
-.icon-large {
-    display: inline;
+.icon-large{
+    display: none;
 }
 
+.weather h2::after{
+    content: "🌡️";
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
 .weather {
     top: 105%;
     right: 1%;
