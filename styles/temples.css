@@ -1,3 +1,52 @@
+* {
+    box-sizing: border border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+}
+
+header {
+    background-color: rgb(49, 10, 128);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#course-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#menu-button {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
 
 nav {
     display: none;
@@ -9,7 +58,6 @@ nav {
 nav.show {
     display: block;
 }
-
 
 .navigation {
     display: flex;
@@ -35,18 +83,8 @@ nav.show {
 
 .navigation a:hover {
     border-bottom: 2px solid white;
+    color: rgb(202, 35, 149);
 }
-
-#menu-button {
-    display: block;
-    font-size: 2rem;
-    background: none;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-left: auto;
-}
-
 
 .gallery {
     display: grid;
@@ -59,7 +97,6 @@ nav.show {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .gallery img {
@@ -68,15 +105,27 @@ nav.show {
     border-radius: 15px 150px;
 }
 
-
 figcaption {
-    margin-top: 0.5rem;
-    font-size: 16px;
-    color: rgb(150, 34, 144);
-    text-align: center;
+    margin-top: 10px;
+    color: rgb(70, 29, 195);
 }
 
 .gallery h2 {
     position: absolute;
     left: -10000px;
+}
+
+footer {
+    background-color: rgb(49, 10, 128);
+    color: white;
+    padding: 1rem;
+}
+
+footer p {
+    font-size: 18px;
+    text-align: center;
+}
+
+#lastModified {
+    font-size: 15px;
 }
