@@ -1,0 +1,130 @@
+* {
+    box-sizing: border border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+}
+
+header {
+    background-color: rgb(49, 10, 128);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#course-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#menu-button {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+nav {
+    display: none;
+    width: 100%;
+    background-color: rgb(49, 10, 128);
+    margin-top: 1rem;
+}
+
+nav.show {
+    display: block;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.navigation li {
+    border-top: 1px solid white;
+    text-align: center;
+}
+
+.navigation a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.navigation a:hover {
+    border-bottom: 2px solid white;
+    color: rgb(202, 35, 149);
+}
+
+.res-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.res-grid figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.res-grid img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: rgb(70, 29, 195);
+}
+
+.gallery h2 {
+    position: absolute;
+    left: -10000px;
+}
+
+footer {
+    background-color: rgb(49, 10, 128);
+    color: white;
+    padding: 1rem;
+}
+
+footer p {
+    font-size: 18px;
+    text-align: center;
+}
+
+#lastModified {
+    font-size: 15px;
+}
