@@ -95,12 +95,12 @@ const temples = [
   "https://churchofjesuschristtemples.org/assets/img/temples/_temp/024-Santiago-Chile-Temple.jpg"
  },
  {
-  templeName: "Bogota Colombia",
-  location: "Bogota, Colombia",
-  dedicated: "1999, April, 24",
-  area: 53500,
+  templeName: "Brasiliia Brazil",
+  location: "Brasilia, Brazil",
+  dedicated: "2023, September, 17",
+  area:  25000,
   imageUrl:
-  "https://churchofjesuschristtemples.org/assets/img/temples/bogota-colombia-temple/bogota-colombia-temple-7734.jpg"
+  "https://churchofjesuschristtemples.org/assets/img/temples/brasilia-brazil-temple/brasilia-brazil-temple-16212.jpg"
   
  },
 
@@ -136,7 +136,8 @@ document.querySelector("#small").addEventListener("click", () => {
 
 
 function createTempleCard(filteredTemples) {
-    document.querySelector(".res-grid").innerHTML = "";
+  document.querySelector(".res-grid").innerHTML = "";
+  
     filteredTemples.forEach(temple => {
     let card = document.createElement("section");
     let name = document.createElement("h3");
