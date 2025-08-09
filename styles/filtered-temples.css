@@ -96,8 +96,9 @@ nav.show {
 /*nuevo*/
 
 .res-grid section {
-    background-color: #b7b3b3;
+    background-color: #c9c9c9;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(202, 35, 149);
     padding: 1rem;
     text-align: center;
     font-family: 'Roboto', sans-serif;
