@@ -95,7 +95,7 @@ const temples = [
   "https://churchofjesuschristtemples.org/assets/img/temples/_temp/024-Santiago-Chile-Temple.jpg"
  },
  {
-  templeName: "Brasiliia Brazil",
+  templeName: "Brasilia Brazil",
   location: "Brasilia, Brazil",
   dedicated: "2023, September, 17",
   area:  25000,
@@ -103,7 +103,26 @@ const temples = [
   "https://churchofjesuschristtemples.org/assets/img/temples/brasilia-brazil-temple/brasilia-brazil-temple-16212.jpg"
   
  },
-
+  
+ {
+  templeName: "Nauvoo United States",
+  location: "Nauvoo, Illinois United States",
+  dedicated: "1846, May, 1",
+  area:  50000,
+  imageUrl:
+  "https://churchofjesuschristtemples.org/assets/img/temples/nauvoo-temple/nauvoo-temple-3060.jpg"
+  
+  },
+ 
+ {
+  templeName: "Helena Montana United States",
+  location: "Helena Montana, United States",
+  dedicated: "2023, June, 18",
+  area: 9794,
+  imageUrl:
+  "https://churchofjesuschristtemples.org/assets/img/temples/helena-montana-temple/helena-montana-temple-37751-main.jpg"
+  
+  },
     
 ];
 
@@ -150,9 +169,12 @@ function createTempleCard(filteredTemples) {
     location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
     dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
     area.innerHTML = `<span class="label">Size:</span> ${temple.area.toLocaleString()} sq ft`;
+      
     img.setAttribute("src", temple.imageUrl);
     img.setAttribute("alt", `${temple.templeName} Temple`);
     img.setAttribute("loading", "lazy");
+    img.setAttribute("width", "400"); 
+    img.setAttribute("height", "250");
 
     card.appendChild(name);
     card.appendChild(location);

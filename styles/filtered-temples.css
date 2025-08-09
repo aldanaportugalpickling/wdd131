@@ -87,6 +87,7 @@ nav.show {
 }
 
 .res-grid {
+    min-height: 600px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -125,6 +126,7 @@ nav.show {
 .res-grid img {
     width: 100%;
     height: auto;
+    aspect-ratio: 16 / 10;
 }
 
 
