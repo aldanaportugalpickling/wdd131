@@ -79,13 +79,12 @@ const temples = [
   },
   
   {
-   templeName: "Brasilia Brazil",
-   location: "Brasilia, Brazil",
-   dedicated: "2023, September, 17",
-   area:  25000,
+   templeName: "Kirtland",
+   location: "Kirtland, Ohio, United States",
+   dedicated: "1836, March, 27",
+   area: 15000 ,
    imageUrl:
-   "https://churchofjesuschristtemples.org/assets/img/temples/brasilia-brazil-temple/brasilia-brazil-temple-16212.jpg"
-  
+   "https://churchofjesuschristtemples.org/assets/img/temples/kirtland-temple/kirtland-temple-1275-main.jpg"
   },
 
   {
@@ -106,7 +105,7 @@ const temples = [
    "https://churchofjesuschristtemples.org/assets/img/temples/nauvoo-temple/nauvoo-temple-3060.jpg"
   
   },
-  
+
   {
     templeName: "Rome Italy",
     location: "Rome, Italy",
