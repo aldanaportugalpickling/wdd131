@@ -87,16 +87,6 @@ const temples = [
    "https://churchofjesuschristtemples.org/assets/img/temples/brasilia-brazil-temple/brasilia-brazil-temple-16212.jpg"
   
   },
- 
-  {
-   templeName: "Santiago Chile",
-   location: "Santiago, Chile",
-   dedicated: "1983, September, 15",
-   area: 20831,
-   imageUrl:
-   "https://churchofjesuschristtemples.org/assets/img/temples/_temp/024-Santiago-Chile-Temple.jpg"
-  },
- 
 
   {
    templeName: "Buenos Aires Argentina",
@@ -115,6 +105,15 @@ const temples = [
    imageUrl:
    "https://churchofjesuschristtemples.org/assets/img/temples/nauvoo-temple/nauvoo-temple-3060.jpg"
   
+  },
+  
+  {
+   templeName: "Santiago Chile",
+   location: "Santiago, Chile",
+   dedicated: "1983, September, 15",
+   area: 20831,
+   imageUrl:
+   "https://churchofjesuschristtemples.org/assets/img/temples/_temp/024-Santiago-Chile-Temple.jpg"
   },
  
   {
