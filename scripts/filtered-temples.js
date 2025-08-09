@@ -62,8 +62,8 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
   },
   {
-    templeName: "Lima Perú",
-    location: "Lima, Perú",
+    templeName: "Lima Peru",
+    location: "Lima, Peru",
     dedicated: "1986, January, 10",
     area: 9600,
     imageUrl:
@@ -109,7 +109,7 @@ const temples = [
  
   {
    templeName: "Nauvoo United States",
-   location: "Nauvoo, Illinois United States",
+   location: "Nauvoo, illinois United States",
    dedicated: "1846, May, 1",
    area:  50000,
    imageUrl:
