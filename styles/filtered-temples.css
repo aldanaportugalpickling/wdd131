@@ -94,10 +94,9 @@ nav.show {
     padding: 1rem;
 }
 
-/*nuevo*/
 
 .res-grid section {
-    background-color: #c9c9c9;
+    background-color: rgb(201, 201, 201);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border: 1px solid rgb(202, 35, 149);
     padding: 1rem;
@@ -119,7 +118,7 @@ nav.show {
 
 .res-grid p {
     font-size: 0.95rem;
-    color: #000;
+    color: rgb(0, 0, 0);
     margin: 0.3rem 0;
 }
 
