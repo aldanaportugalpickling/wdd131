@@ -118,7 +118,7 @@ const temples = [
   },
  
   {
-   templeName: "Helena Montana United States",
+   templeName: "Helena Montana",
    location: "Helena Montana, United States",
    dedicated: "2023, June, 18",
    area: 9794,
