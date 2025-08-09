@@ -78,35 +78,55 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
   
- {
-  templeName: "Brasilia Brazil",
-  location: "Brasilia, Brazil",
-  dedicated: "2023, September, 17",
-  area:  25000,
-  imageUrl:
-  "https://churchofjesuschristtemples.org/assets/img/temples/brasilia-brazil-temple/brasilia-brazil-temple-16212.jpg"
-  
- },
-  
- {
-  templeName: "Nauvoo United States",
-  location: "Nauvoo, Illinois United States",
-  dedicated: "1846, May, 1",
-  area:  50000,
-  imageUrl:
-  "https://churchofjesuschristtemples.org/assets/img/temples/nauvoo-temple/nauvoo-temple-3060.jpg"
+  {
+   templeName: "Brasilia Brazil",
+   location: "Brasilia, Brazil",
+   dedicated: "2023, September, 17",
+   area:  25000,
+   imageUrl:
+   "https://churchofjesuschristtemples.org/assets/img/temples/brasilia-brazil-temple/brasilia-brazil-temple-16212.jpg"
   
   },
  
- {
-  templeName: "Helena Montana United States",
-  location: "Helena Montana, United States",
-  dedicated: "2023, June, 18",
-  area: 9794,
-  imageUrl:
-  "https://churchofjesuschristtemples.org/assets/img/temples/helena-montana-temple/helena-montana-temple-37751-main.jpg"
+  {
+   templeName: "Santiago Chile",
+   location: "Santiago, Chile",
+   dedicated: "1983, September, 15",
+   area: 20831,
+   imageUrl:
+   "https://churchofjesuschristtemples.org/assets/img/temples/_temp/024-Santiago-Chile-Temple.jpg"
+  },
+ 
+
+  {
+   templeName: "Buenos Aires Argentina",
+   location: "Buenos Aires, Argentina",
+   dedicated: "1986, January, 17",
+   area: 30659,
+   imageUrl:
+   "https://churchofjesuschristtemples.org/assets/img/temples/buenos-aires-argentina-temple/buenos-aires-argentina-temple-12546.jpg"
+  },
+ 
+  {
+   templeName: "Nauvoo United States",
+   location: "Nauvoo, Illinois United States",
+   dedicated: "1846, May, 1",
+   area:  50000,
+   imageUrl:
+   "https://churchofjesuschristtemples.org/assets/img/temples/nauvoo-temple/nauvoo-temple-3060.jpg"
   
   },
+ 
+  {
+   templeName: "Helena Montana United States",
+   location: "Helena Montana, United States",
+   dedicated: "2023, June, 18",
+   area: 9794,
+   imageUrl:
+   "https://churchofjesuschristtemples.org/assets/img/temples/helena-montana-temple/helena-montana-temple-37751-main.jpg"
+  
+  },
+
     
 ];
 
