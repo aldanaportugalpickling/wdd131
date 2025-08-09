@@ -1,5 +1,5 @@
 * {
-    box-sizing: border border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -93,10 +93,32 @@ nav.show {
     padding: 1rem;
 }
 
+/*nuevo*/
+
+.res-grid section {
+    background-color: #b7b3b3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
 .res-grid figure {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.res-grid h3 {
+    font-size: 1.2rem;
+    color: rgb(49, 10, 128);;
+    margin-bottom: 0.5rem;
+}
+
+.res-grid p {
+    font-size: 0.95rem;
+    color: #000;
+    margin: 0.3rem 0;
 }
 
 .res-grid img {
@@ -104,15 +126,6 @@ nav.show {
     height: auto;
 }
 
-figcaption {
-    margin-top: 10px;
-    color: rgb(70, 29, 195);
-}
-
-.gallery h2 {
-    position: absolute;
-    left: -10000px;
-}
 
 footer {
     background-color: rgb(49, 10, 128);

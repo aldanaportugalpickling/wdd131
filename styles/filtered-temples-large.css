@@ -64,9 +64,4 @@
         height: auto;
     }
 
-    figcaption {
-        font-size: 16px;
-        color: rgb(70, 29, 195);
-        text-align: center;
-    }
 }
