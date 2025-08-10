@@ -138,8 +138,8 @@ nav.show {
 }
 
 .res-grid img {
-    width: 400px;
-    height: 250px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     display:block;
     aspect-ratio: 16 / 10;
