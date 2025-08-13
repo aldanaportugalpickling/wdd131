@@ -19,13 +19,6 @@ header {
     position: relative;
 }
 
-.header-left {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    justify-content: center;
-}
-
 h2 {
     text-align: center;
     margin-top: 25px;
