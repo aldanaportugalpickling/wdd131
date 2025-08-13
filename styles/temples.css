@@ -110,11 +110,6 @@ figcaption {
     color: rgb(70, 29, 195);
 }
 
-.gallery h2 {
-    position: absolute;
-    left: -10000px;
-}
-
 footer {
     background-color: rgb(49, 10, 128);
     color: white;
