@@ -19,6 +19,7 @@
 body {
     background-color: rgb(211, 211, 211);
     font-family: "Open Sans", sans-serif;
+   
 }
 
 
@@ -61,7 +62,7 @@ section {
     display: flex;
     gap: 2rem;
     justify-content: center;
-    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 1rem;
 }
  figcaption{
@@ -71,10 +72,11 @@ section {
  }
 
 footer {
+    display: flex;
+    justify-content: center;
     background-color: var(--color-primary);
     padding: 1rem;
 }
 footer p {
     color: var(--color-secondary);
-    text-align: center;
 }
