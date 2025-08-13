@@ -75,4 +75,5 @@ footer {
 }
 footer p {
     color: var(--color-secondary);
+    text-align: center;
 }
