@@ -43,7 +43,7 @@ main p {
 .home-button {
     display: inline-block;
     padding: 0.85rem 1.5rem;
-    background-color: var(--third-color);
+    background-color: var(--fourth-color);
     color: rgb(21, 21, 21);
     text-decoration: none;
     border-radius: 8px;
@@ -54,7 +54,7 @@ main p {
 }
 
 .home-button:hover{
-    background-color: var(--fourth-color);
+    background-color: var(--third-color);
 }
 footer {
     background-color: var(--main-color);
