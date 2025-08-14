@@ -2,7 +2,6 @@
 document.querySelector('#currentyear').textContent = new Date().getFullYear();
 document.querySelector('#lastModified').textContent = `Last Modified: ${document.lastModified}`;
 
-//Array de productos
 const products = [
   {
     id: "fc-1888",
@@ -31,13 +30,13 @@ const products = [
   }
 ];
 
-// Poblar el menú desplegable de productos
+
 const selectElement = document.getElementById("product");
 
 products.forEach(product => {
   const option = document.createElement("option");
-  option.value = product.id; // Valor que se envía en el formulario
-  option.textContent = product.name; // Texto visible para el usuario
+  option.value = product.id; 
+  option.textContent = product.name; 
   selectElement.appendChild(option);
 });
 

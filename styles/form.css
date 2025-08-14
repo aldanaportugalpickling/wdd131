@@ -167,12 +167,12 @@ legend {
 footer {
     background-color: var(--main-color);
     padding: 1rem;
- }
+}
 
- footer p {
+footer p {
     color:var(--second-color);
     text-align: center;
- }
+}
 
 
  @media (max-width: 600px) {
