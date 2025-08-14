@@ -1,79 +1,100 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inka Tours Peru - Tours</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <script src="scripts/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inka Tours Peru</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="description" content="WDD 131 Site plan - Inka Tours Peru - Aldan Andrea Portugal Pickling">
+    <meta name="author" content="Aldana Andrea Portugal Pickling">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="scripts/tours.js" defer></script>
+
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Inka Tours Peru logo" width="200" height="120" />
-        <h1>Inka Tours Peru - Agency Site Plan</h1>
-
-        <nav class="nav-links">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tours.html">Tours</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="references.html">References</a></li>
-            </ul>
-        </nav>
-
-        <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
-
+        <header>
+            <img src="images/logo.png" alt="Inka Tours Peru logo" width="200" height="120">
+            <h1>Inka Tours Peru - Site Plan</h1>
+        
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        
+            <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+        
+        </header>
     </header>
 
     <main>
-        <h2>Tour Packages</h2>
-        <section class="tour-list">
-
-            <div class="tour">
-                <img src="images/machu-picchu.jpg" alt="Machu Picchu Tour" class="tour-img" />
-                <h2>Machu Picchu Premium Tour</h2>
-                <p>Includes round-trip transportation, entrance tickets, and bilingual guide.</p>
-                <button class="details-btn">View Details</button>
-                <div class="tour-details hidden">
-                    <p><strong>Duration:</strong> Full day</p>
-                    <p><strong>Price:</strong> $120 USD</p>
-                    <p><strong>What to bring:</strong> Comfortable shoes, sunscreen, ID</p>
-                </div>
+        <section class="tour">
+            <h2>Machu Picchu Premium Tour</h2>
+            <p>Includes round-trip transportation, entrance tickets, and bilingual guide.</p>
+            <button class="details-btn">View Details</button>
+            <div class="tour-details hidden">
+                <p><strong>Duration:</strong> Full day</p>
+                <p><strong>Price:</strong> $120 USD</p>
+                <p><strong>Departure:</strong> 6:00 am from Cusco</p>
+                <p><strong>Experience:</strong> Embark on a curated journey to Machu Picchu aboard a panoramic-view
+                    train. Your private guide will unveil the secrets of the citadel, from the Temple of the Sun to the
+                    sacred Intihuatana. Enjoy a gourmet picnic with Andean flavors and receive a handcrafted souvenir to
+                    commemorate your visit.</p>
+                <p><strong>Highlights:</strong> VIP train service, private guide, exclusive access zones</p>
+                <p><strong>Signature Touch:</strong> Personalized photo album and luxury transfer options</p>
             </div>
+        </section>
 
-            <div class="tour">
-                <img src="images/sacsayhuaman.jpg" alt="Sacsayhuamán Tour" class="tour-img" />
-                <h2>Sacsayhuamán Half-Day Tour</h2>
-                <p>Private excursion with guide. Includes transport and entry.</p>
-                <button class="details-btn">View Details</button>
-                <div class="tour-details hidden">
-                    <p><strong>Duration:</strong> 4 hours</p>
-                    <p><strong>Price:</strong> $60 USD</p>
-                    <p><strong>What to bring:</strong> Water, hat, camera</p>
-                </div>
+        <section class="tour">
+            <h2>Sacsayhuamán Half-Day Tour</h2>
+            <p>Private excursion with guide. Includes transport and entry.</p>
+            <button class="details-btn">View Details</button>
+            <div class="tour-details hidden">
+                <p><strong>Duration:</strong> 4 hours</p>
+                <p><strong>Price:</strong> $60 USD</p>
+                <p><strong>Departure:</strong> Flexible scheduling from Cusco</p>
+                <p><strong>Experience:</strong> Discover the grandeur of Sacsayhuamán in a private setting. Your expert
+                    guide will walk you through the fortress’s monumental architecture and spiritual significance. Enjoy
+                    a curated tasting of local snacks and a panoramic viewpoint reserved for our guests.</p>
+                <p><strong>Highlights:</strong> Private access, cultural storytelling, artisan gift</p>
+                <p><strong>Signature Touch:</strong> Optional drone footage and luxury SUV pickup</p>
             </div>
+        </section>
 
-            <div class="tour">
-                <img src="images/lago-titicaca.jpg" alt="Lake Titicaca Tour" class="tour-img" />
-                <h2>Lake Titicaca Experience</h2>
-                <p>From Cusco to Puno. Includes transport, guide, and visit to floating islands.</p>
-                <button class="details-btn">View Details</button>
-                <div class="tour-details hidden">
-                    <p><strong>Duration:</strong> 2 days</p>
-                    <p><strong>Price:</strong> $180 USD</p>
-                    <p><strong>What to bring:</strong> Warm clothes, camera, snacks</p>
-                </div>
+        <section class="tour">
+            <h2>Lake Titicaca Experience</h2>
+            <p>From Cusco to Puno. Includes transport, guide, and visit to floating islands.</p>
+            <button class="details-btn">View Details</button>
+            <div class="tour-details hidden">
+                <p><strong>Duration:</strong> 2 days</p>
+                <p><strong>Price:</strong> $180 USD</p>
+                <p><strong>Departure:</strong> Early morning from Cusco</p>
+                <p><strong>Experience:</strong> Travel in comfort from Cusco to Puno with premium seating and onboard
+                    refreshments. Explore the floating Uros Islands with a local host, then retreat to a lakeside
+                    eco-lodge featuring gourmet cuisine and stargazing by the fire. This is a journey for those who seek
+                    serenity, culture, and exclusivity.</p>
+                <p><strong>Highlights:</strong> Private boat tour, cultural immersion, luxury lodging</p>
+                <p><strong>Signature Touch:</strong> Evening storytelling with local elders and artisan workshop</p>
             </div>
-
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> Aldana Andrea Portugal Pickling | Peru</p>
-        <p id="lastModified"></p>
+        <p>© 2025 Aldana Andrea Portugal Pickling | Peru</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -169,3 +169,68 @@ footer p {
 }
 
 /*styles to tours*/
+.tour {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    transition: transform 0.3s ease;
+}
+
+.tour:hover {
+    transform: translateY(-5px);
+}
+
+.tour h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.tour p {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
+
+/* BOTÓN DE DETALLES */
+.details-btn {
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+    background-color: rgb(200, 130, 0);
+}
+
+/* DETALLES OCULTOS */
+.tour-details {
+    margin-top: 1rem;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
