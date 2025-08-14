@@ -238,15 +238,17 @@ footer p {
 
 /*reservationsssss*/
 /* SECCIÓN DE RESERVAS */
+
 .reservation-section {
-    background-color: var(--color-secondary);
+    background-color: white;
+    /* cambia de var(--color-secondary) a blanco */
     max-width: 500px;
     margin: 3rem auto;
-    /* centra horizontalmente y da margen arriba/abajo */
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: left;
+    /* alinea todo a la izquierda, no al centro */
 }
 
 .reservation-section h2 {
@@ -277,13 +279,18 @@ footer p {
     width: 100%;
 }
 
+
 .reservation-section fieldset {
     border: 2px solid var(--color-primary);
     border-radius: 6px;
     padding: 1rem;
-    text-align: left;
+    display: flex;
+    /* hace que los radios estén en fila */
+    gap: 1rem;
+    /* espacio entre Yes y No */
+    align-items: center;
+    /* centra verticalmente los radios */
 }
-
 .reservation-section legend {
     font-weight: 600;
     color: var(--color-primary);
