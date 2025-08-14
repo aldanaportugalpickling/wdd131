@@ -68,12 +68,16 @@ section {
  }
 
 footer {
-    display: flex;
-    justify-content: center;
+    
     background-color: var(--color-primary);
     padding: 1rem;
 }
 footer p {
     color: var(--color-secondary);
     text-align: center;
+}
+
+#lastModified {
+    color: yellow;
+    font-size: 15px;
 }
