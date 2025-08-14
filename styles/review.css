@@ -1,7 +1,14 @@
+:root{
+    --main-color: #3f0f67;
+    --second-color:#f0f0f5 ;
+    --third-color: #97a3af;
+    --fourth-color: #8c7d98;
+}
+
 html,body {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
-    background-color: #f0f0f5;
+    background-color: var(--second-color);
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,12 +18,12 @@ html,body {
 header {
     display: flex;
     justify-content: center;
-    background-color: #3f0f67;
+    background-color: var(--main-color);
     padding: 1rem;
 }
 
 h1 {
-    color: #f0f0f5;
+    color: var(--second-color);
     font-size: 40px;
 
 }
@@ -36,7 +43,7 @@ main p {
 .home-button {
     display: inline-block;
     padding: 0.85rem 1.5rem;
-    background-color: #97a3af;
+    background-color: var(--third-color);
     color: rgb(21, 21, 21);
     text-decoration: none;
     border-radius: 8px;
@@ -47,10 +54,10 @@ main p {
 }
 
 .home-button:hover{
-    background-color: #8c7d98;
+    background-color: var(--fourth-color);
 }
 footer {
-    background-color: #3f0f67;
-    color: #f0f0f5;
+    background-color: var(--main-color);
+    color: var(--second-color);
     text-align: center;
 }
