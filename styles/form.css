@@ -26,7 +26,6 @@ h1 {
     font-size: 40px; 
 }
 
-/*aqui empieza todo el contenido de la web*/
 
 main {
     
@@ -103,15 +102,13 @@ legend {
     font-weight: bold;
     color: var(--main-color);
     margin-bottom: 0.1rem;
-    /* casi pegado a las estrellas */
     font-size: 1rem;
     padding: 0;
-    /* elimina espacio interno del legend */
+   
 }
 
 .rating .stars {
     margin-top: 0;
-    /* asegura que no haya espacio arriba */
 }
 
 .rating fieldset {
@@ -163,7 +160,6 @@ legend {
 .submit-btn:hover {
     background-color: var(--fourth-color);
 }
-
 
 
 footer {
