@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inka Tours Peru - Reservations</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/reservations.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Inka Tours Peru logo" width="200" height="120" />
+        <h1>Inka Tours Peru - Agency Site Plan</h1>
+
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+
+        <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+
+    </header>
+
+    <main>
+        <h2>Reserve Your Tour</h2>
+        <form id="reservationForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="tour">Select Tour:</label>
+            <select id="tour" name="tour" required>
+                <option value="">-- Choose a tour --</option>
+                <option value="Machu Picchu Premium Tour">Machu Picchu Premium Tour</option>
+                <option value="Sacsayhuamán Half-Day Tour">Sacsayhuamán Half-Day Tour</option>
+                <option value="Lake Titicaca Experience">Lake Titicaca Experience</option>
+            </select>
+
+            <fieldset>
+                <legend>Do you want a bilingual guide?</legend>
+                <label>
+                    <input type="radio" name="guide" value="Yes" required />
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" name="guide" value="No" required />
+                    No
+                </label>
+            </fieldset>
+
+            <button type="submit">Submit Reservation</button>
+        </form>
+
+        <div id="confirmation" class="hidden">
+            <h2>Thank you for your reservation!</h2>
+            <p>We will contact you soon with more details.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Aldana Andrea Portugal Pickling | Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
