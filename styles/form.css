@@ -1,6 +1,10 @@
 :root {
-    --main-color:
+    --main-color:#3f0f67;
+    --second-color: #f0f0f5;
+    --third-color: #97a3af;
+    --fourth-color: #8c7d98;
 }
+
 *{
    box-sizing: border-box;
    margin: 0;
@@ -8,5 +12,126 @@
 }
 
 body {
-    background-color: ;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--second-color)
 }
+
+header {
+    background-color: var(--main-color);
+    padding: 1rem;
+}
+h1 {
+    color: var(--second-color);
+    text-align: center;
+    font-size: 40px; 
+}
+
+/*aqui empieza todo el contenido de la web*/
+
+main {
+    padding: 3rem;
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(63, 15, 103, 0.2);
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.required {
+    color: red;
+    font-weight: normal;
+}
+
+.optional {
+    color: var(--main-color);
+    font-weight: normal;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid var(--third-color);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    border: none;
+    margin-top: 1rem;
+    
+}
+
+legend {
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+
+.stars {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--fourth-color);
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.stars input:checked~label {
+    color: rgba(230, 224, 47, 0.937);
+}
+
+.features label {
+    display: block;
+    margin-top: 0.3rem;
+    color: var(--fourth-color);
+}
+
+.submit-btn {
+    margin-top: 2rem;
+    background-color: var(--main-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: var(--fourth-color);
+}
+
+
+
+footer {
+    background-color: var(--main-color);
+    padding: 1rem;
+ }
+
+ footer p {
+    color:var(--second-color);
+    text-align: center;
+ }
