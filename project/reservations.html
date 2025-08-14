@@ -28,41 +28,43 @@
     </header>
 
     <main>
-        <h2>Reserve Your Tour</h2>
-        <form id="reservationForm">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required />
+        <section class="reservation-section">
+            <h2>Reserve Your Tour</h2>
+            <form id="reservationForm" method="get">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required />
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required />
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required />
 
-            <label for="tour">Select Tour:</label>
-            <select id="tour" name="tour" required>
-                <option value="">-- Choose a tour --</option>
-                <option value="Machu Picchu Premium Tour">Machu Picchu Premium Tour</option>
-                <option value="Sacsayhuamán Half-Day Tour">Sacsayhuamán Half-Day Tour</option>
-                <option value="Lake Titicaca Experience">Lake Titicaca Experience</option>
-            </select>
+                <label for="tour">Select Tour:</label>
+                <select id="tour" name="tour" required>
+                    <option value="">-- Choose a tour --</option>
+                    <option value="Machu Picchu Premium Tour">Machu Picchu Premium Tour</option>
+                    <option value="Sacsayhuamán Half-Day Tour">Sacsayhuamán Half-Day Tour</option>
+                    <option value="Lake Titicaca Experience">Lake Titicaca Experience</option>
+                </select>
 
-            <fieldset>
-                <legend>Do you want a bilingual guide?</legend>
-                <label>
-                    <input type="radio" name="guide" value="Yes" required />
-                    Yes
-                </label>
-                <label>
-                    <input type="radio" name="guide" value="No" required />
-                    No
-                </label>
-            </fieldset>
+                <fieldset>
+                    <legend>Do you want a bilingual guide?</legend>
+                    <label>
+                        <input type="radio" name="guide" value="Yes" required />
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="guide" value="No" required />
+                        No
+                    </label>
+                </fieldset>
 
-            <button type="submit">Submit Reservation</button>
-        </form>
+                <button type="submit">Submit Reservation</button>
+            </form>
 
-        <div id="confirmation" class="hidden">
-            <h2>Thank you for your reservation!</h2>
-            <p>We will contact you soon with more details.</p>
-        </div>
+            <div id="confirmation" class="hidden">
+                <h2>Thank you for your reservation!</h2>
+                <p>We will contact you soon with more details.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
