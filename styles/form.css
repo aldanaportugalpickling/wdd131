@@ -31,7 +31,7 @@ main {
     
     padding: 3rem;
     max-width: 600px;
-    margin: auto;
+    margin: 2rem auto;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(63, 15, 103, 0.2);
@@ -51,7 +51,9 @@ form label {
 
 .optional {
     color: var(--main-color);
-    font-weight: normal;
+    font-style: italic;
+    font-size: small;
+    font-weight: bold;
 }
 
 select,
