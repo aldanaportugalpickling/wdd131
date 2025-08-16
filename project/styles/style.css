@@ -52,11 +52,8 @@ header {
 nav {
     display: none;
     width: 100%;
-    /*margin-top: 1rem;*/
     position: absolute;
-    /* 👈 ahora es absoluto */
     top: 100%;
-    /* 👈 justo debajo del header */
     left: 0;
     background-color: var(--color-primary);
     z-index: 1000;
@@ -96,18 +93,21 @@ nav.show {
     header {
         flex-wrap: nowrap;
         justify-content: flex-start;
-        /* Alinea al inicio */
     }
 
     #menu-button {
         display: none;
-        /* ocultar hamburguesa */
+    
     }
 
     nav {
         display: block !important;
         width: auto;
         margin-left: auto;
+        position: static;
+        top: auto;
+        left: auto;
+        background: none;
 
     }
 
