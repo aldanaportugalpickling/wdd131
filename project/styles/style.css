@@ -53,7 +53,13 @@ nav {
     display: none;
     width: 100%;
     /*margin-top: 1rem;*/
-    
+    position: absolute;
+    /* 👈 ahora es absoluto */
+    top: 100%;
+    /* 👈 justo debajo del header */
+    left: 0;
+    background-color: var(--color-primary);
+    z-index: 1000;
 }
 
 nav.show {
