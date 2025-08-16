@@ -21,38 +21,97 @@ header {
     background-color: var(--color-primary);
     color: var(--color-secondary);
     display: flex;
-    justify-content: left;
-    padding: .5rem;
-}
-
-
-h1 {
-    font-family: 'Lato', sans-serif;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.nav-links ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    justify-content: right;
     align-items: center;
-    margin-right: 2rem;
-    margin-top: 3rem;
+    padding: 1rem;
+    position: relative;
+}
+.logo img{
+    height: 110px;
+    max-height: 100px;
 }
 
-.nav-links a {
-    color: var(--color-secondary);
+#course-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 6rem;
+}
+
+#menu-button {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+nav {
+    display: none;
+    width: 100%;
+    /*margin-top: 1rem;*/
+}
+
+nav.show {
+    display: block;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    width: 100%;
+    text-align: center;
+}
+
+.navigation a {
+    display: block;
+    color: white;
     text-decoration: none;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
+    padding: 1rem;
 }
 
-.nav-links a:hover {
+.navigation a:hover {
     color: var(--color-accent);
-    transition: color 0.3s ease;
+}
+
+/* 📌 Pantallas grandes (Laptop/PC) */
+@media (min-width: 768px) {
+    header {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        /* Alinea al inicio */
+    }
+
+    #menu-button {
+        display: none;
+        /* ocultar hamburguesa */
+    }
+
+    nav {
+        display: block !important;
+        width: auto;
+        margin-left: auto;
+
+    }
+
+    .navigation {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .navigation li {
+        width: auto;
+    }
 }
 
 /*aqui comienza todo el contenido del desarrollo*/

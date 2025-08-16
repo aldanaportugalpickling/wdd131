@@ -1,24 +1,29 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll(".details-btn");
+const hamButton = document.querySelector('#menu-button');
+const navigation = document.querySelector('nav');
 
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const details = btn.nextElementSibling;
-      details.classList.toggle("hidden");
-      btn.textContent = details.classList.contains("hidden") ? "View Details" : "Hide Details";
-    });
-  });
+hamButton.addEventListener('click', () => {
+  navigation.classList.toggle('show');
+  hamButton.classList.toggle('open');
 
-  // Footer dynamic year and last modified
-  document.getElementById("currentyear").textContent = new Date().getFullYear();
-  document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
+
+ if (hamButton.classList.contains('open')) {
+    hamButton.innerHTML = '&times;'; // ✕
+  } else {
+    hamButton.innerHTML = '&#9776;'; // ☰
+  }
 });
 
 
+//Date and Time
+document.querySelector('#currentyear').textContent = new Date().getFullYear();
+
+document.querySelector('#lastModified').textContent = `Last Modified: ${document.lastModified}`;
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
+
+
+/*document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("reservationForm");
   const confirmation = document.getElementById("confirmation");
 
@@ -64,4 +69,4 @@ const navLinks = document.querySelector(".nav-links");
 
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
-});
+});*/
