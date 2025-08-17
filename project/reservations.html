@@ -41,14 +41,20 @@
                 <input type="email" id="email" name="email" required>
 
                 <label for="tour">Select Tour:</label>
+                
                 <select id="tour" name="tour" required>
+
                     <option value="">-- Choose a tour --</option>
-                    <option value="Machu Picchu Premium Tour">Machu Picchu Premium Tour</option>
-                    <option value="Sacred Valley of the Incas Half-Day Tour">Sacsayhuamán Half-Day Tour</option>
                     <option value="Lake Titicaca Experience">Lake Titicaca Experience</option>
+                    <option value="Machu Picchu Premium Tour">Machu Picchu Premium Tour</option>
                     <option value="Rainbow Mountain Luxury Trek">Rainbow Mountain Luxury Trek</option>
+                    <option value="Sacred Valley of the Incas Half-Day Tour">Sacred Valley of the Incas Half-Day Tour</option>
 
                 </select>
+
+                <label for="guests">Number of Travelers:</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" value="1" required>
+        
 
                 <fieldset>
                     <legend>Do you want a bilingual guide?</legend>
@@ -62,7 +68,7 @@
                     </label>
                 </fieldset>
 
-                <button type="submit">Submit Reservation</button>
+                <button type="submit">Reserve Now</button>
             </form>
 
             <div id="confirmation" class="hidden">
