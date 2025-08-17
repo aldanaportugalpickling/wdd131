@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Array of tour objects — using find/map/push
   const tours = [
     { id: 'machu', name: 'Machu Picchu Premium Tour', basePrice: 2500, durationDays: 2 },
-    { id: 'sacsay', name: 'Sacsayhuamán Half-Day Tour', basePrice: 150, durationDays: 0.5 },
+    { id: 'sacsay', name: 'Sacred Valley of the Incas Half-Day Tour', basePrice: 150, durationDays: 0.5 },
     { id: 'titicaca', name: 'Lake Titicaca Experience', basePrice: 1800, durationDays: 2 },
     { id: 'rainbow', name: 'Rainbow Mountain Adventure', basePrice: 900, durationDays: 1 }
   ];
