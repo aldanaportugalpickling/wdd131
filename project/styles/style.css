@@ -239,7 +239,7 @@ footer p {
 .tour {
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     margin: 2rem auto;
     padding: 2rem;
     max-width: 800px;
@@ -251,10 +251,19 @@ footer p {
 }
 
 .tour h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 26px;
-    color: var(--color-primary);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    text-align: center;
     margin-bottom: 1rem;
+}
+.tour img {
+    display: block;
+    margin: 0 auto 1rem;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .tour p {
@@ -265,9 +274,10 @@ footer p {
 /* BOTÓN DE DETALLES */
 .details-btn {
     background-color: var(--color-accent);
-    color: white;
+    color: var(--color-primary);
     border: none;
-    padding: 0.6rem 1.2rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
@@ -276,11 +286,13 @@ footer p {
 }
 
 .details-btn:hover {
-    background-color: rgb(200, 130, 0);
+    background-color: var(--color-secondary);
+    transform: scale(1.05);
 }
 
 /* DETALLES OCULTOS */
 .tour-details {
+    text-align: left;
     margin-top: 1rem;
     animation: fadeIn 0.5s ease-in-out;
 }
