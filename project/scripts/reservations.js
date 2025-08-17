@@ -1,23 +1,20 @@
-// scripts/reservations.js
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('reservationForm');
   const confirmation = document.getElementById('confirmation');
 
-  // Array of tour objects — using find/map/push
   const tours = [
     { id: 'machu', name: 'Machu Picchu Premium Tour', basePrice: 2500, durationDays: 2 },
     { id: 'sacsay', name: 'Sacred Valley of the Incas Half-Day Tour', basePrice: 150, durationDays: 0.5 },
     { id: 'titicaca', name: 'Lake Titicaca Experience', basePrice: 1800, durationDays: 2 },
-    { id: 'rainbow', name: 'Rainbow Mountain Adventure', basePrice: 900, durationDays: 1 }
+    { id: 'rainbow', name: 'Rainbow Mountain Luxury Trek', basePrice: 900, durationDays: 1 }
   ];
 
-  prefillForm(); // Prefill from localStorage (simple profile)
+  prefillForm();
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-
     const data = getFormData();
-    // Extra validation (besides native required)
+
     if (data.name.length < 3) {
       alert('Please enter your full name (at least 3 characters).');
       return;
@@ -26,62 +23,45 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectedTour = tours.find(t => t.name === data.tour);
     const price = calculatePrice(selectedTour, data.guests, data.guide === 'Yes');
 
-    const reservation = {
-      ...data,
-      price,
-      createdAt: new Date().toISOString()
-    };
+    const reservation = { ...data, price, createdAt: new Date().toISOString() };
 
-    saveReservation(reservation);              
+    saveReservation(reservation);
     form.classList.add('hidden');
-    renderConfirmation(confirmation, reservation); 
+    renderConfirmation(confirmation, reservation);
   });
 
-  // ---- functions ----
-
   function getFormData() {
-    const name = document.getElementById('name')?.value.trim() || '';
-    const email = document.getElementById('email')?.value.trim() || '';
-    const tour = document.getElementById('tour')?.value || '';
-    const guide = (document.querySelector('input[name="guide"]:checked')?.value) || 'No';
-    const guestsEl = document.getElementById('guests');
-    const guests = guestsEl ? Math.max(1, parseInt(guestsEl.value, 10) || 1) : 1;
-    const date = document.getElementById('date')?.value || '';
-    return { name, email, tour, guide, guests, date };
+    return {
+      name: document.getElementById('name')?.value.trim() || '',
+      email: document.getElementById('email')?.value.trim() || '',
+      tour: document.getElementById('tour')?.value || '',
+      guide: (document.querySelector('input[name="guide"]:checked')?.value) || 'No',
+      guests: Math.max(1, parseInt(document.getElementById('guests')?.value, 10) || 1),
+      date: document.getElementById('date')?.value || ''
+    };
   }
 
   function calculatePrice(tourObj, guests, wantsGuide) {
     if (!tourObj) return 0;
-    const guideFeePerPerson = wantsGuide ? 80 : 0; 
-    let subtotal = (tourObj.basePrice + guideFeePerPerson) * guests;
-
-    // Group discount condition
-    if (guests >= 5) {
-      subtotal *= 0.92; // 8% off
-    }
+    const guideFee = wantsGuide ? 80 : 0;
+    let subtotal = (tourObj.basePrice + guideFee) * guests;
+    if (guests >= 5) subtotal *= 0.92;
     return Math.round(subtotal);
   }
 
   function saveReservation(reservation) {
     const key = 'reservations';
     const existing = JSON.parse(localStorage.getItem(key) || '[]');
-    existing.push(reservation); 
+    existing.push(reservation);
     localStorage.setItem(key, JSON.stringify(existing));
-
-    // Save simple profile for prefilling
-    localStorage.setItem('profile', JSON.stringify({
-      name: reservation.name,
-      email: reservation.email
-    }));
+    localStorage.setItem('profile', JSON.stringify({ name: reservation.name, email: reservation.email }));
   }
 
   function prefillForm() {
     const profile = JSON.parse(localStorage.getItem('profile') || 'null');
     if (profile) {
-      const nameEl = document.getElementById('name');
-      const emailEl = document.getElementById('email');
-      if (nameEl) nameEl.value = profile.name || '';
-      if (emailEl) emailEl.value = profile.email || '';
+      if (document.getElementById('name')) document.getElementById('name').value = profile.name || '';
+      if (document.getElementById('email')) document.getElementById('email').value = profile.email || '';
     }
   }
 

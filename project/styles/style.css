@@ -237,7 +237,6 @@ footer p {
 
 footer {
     background-color: var(--color-primary);
-    /* tu color base */
     color: var(--color-secondary);
     padding: 1rem;
     text-align: center;
@@ -345,10 +344,11 @@ footer .social-links a:hover {
 }
 
 .reservation-section h2 {
-    color: var(--color-text);
+    color: var(--color-accent);
     font-family: 'Lato', sans-serif;
     margin-bottom: 1.5rem;
     font-size: 28px;
+    text-align: center;
 }
 
 .reservation-section form {
@@ -457,7 +457,8 @@ footer .social-links a:hover {
     max-width: 800px;
 }
 
-/* TITULOS */
+
+
 .references h2,
 .culture h2 {
     font-family: 'Lato', sans-serif;
@@ -467,7 +468,7 @@ footer .social-links a:hover {
     margin-bottom: 1.5rem;
 }
 
-/* TESTIMONIALS */
+
 .references blockquote {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
@@ -488,11 +489,103 @@ footer .social-links a:hover {
     color: var(--color-primary);
 }
 
-/* CULTURAL CONTENT */
 .culture p {
     font-size: 1rem;
     line-height: 1.7;
     color: var(--color-text);
     margin-bottom: 1rem;
     text-align: justify;
+}
+
+
+#menu-button:focus,
+.details-btn:focus,
+.reservation-section input:focus,
+.reservation-section select:focus,
+.reservation-section button[type="submit"]:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+    border-color: var(--color-accent);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    #course-title {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+    }
+
+    .logo img {
+        height: 70px;
+        max-height: 70px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 22px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero-img {
+        max-width: 100%;
+    }
+
+    .destinos {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .destinos div {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .tour {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .tour img {
+        max-width: 100%;
+    }
+
+    .reservation-section {
+        width: 92%;
+        padding: 1.2rem;
+        margin: 1rem auto;
+    }
+
+    footer .social-links a {
+        margin: 0 12px;
+    }
 }
