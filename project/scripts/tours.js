@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', () => {
+  initTourDetails();
+});
+
 
 document.querySelectorAll('.details-btn').forEach(button => {
     button.addEventListener('click', () => {
