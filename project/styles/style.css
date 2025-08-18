@@ -508,7 +508,16 @@ footer .social-links a:hover {
         padding: 1rem;
         margin: 1rem;
     }
+    .tour ul {
+        list-style-position: inside;
+        padding-left: 1rem;
+        margin: 0;
+     }
 
+    .tour li {
+        margin-bottom: 0.4rem;
+     
+    }
     .reservation-section {
         width: 92%;
         padding: 1.2rem;
