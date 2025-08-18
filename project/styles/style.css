@@ -513,10 +513,43 @@ footer .social-links a:hover {
         max-width: 100%;
     }
 
+    .tour ul {
+        list-style-position: inside;
+        /* bullets dentro de la caja */
+        padding-left: 1rem;
+        /* controlas el margen */
+        margin: 0;
+        /* evita que sobresalga */
+    }
+    
+    .tour li {
+        margin-bottom: 0.4rem;
+        /* espacio entre items */
+    }
+
     .reservation-section {
         width: 92%;
         padding: 1.2rem;
         margin: 1rem auto;
+    }
+    .reservation-section .radio-group {
+        display: flex;
+        gap: 1.5rem;
+        /* espacio entre Yes y No */
+        align-items: center;
+    }
+
+    .reservation-section .radio-group label {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        /* radio pegado al texto */
+        font-size: 0.95rem;
+    }
+
+    .reservation-section input[type="radio"] {
+        margin: 0;
+        /* elimina espacio raro */
     }
 
 
