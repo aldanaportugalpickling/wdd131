@@ -123,6 +123,7 @@ nav.show {
     margin-bottom: 1rem;
 }
 
+
 .btn {
     background-color: var(--color-accent);
     color: var(--color-primary);
@@ -474,7 +475,6 @@ footer .social-links a:hover {
 
     .logo img {
         max-width: 60px;
-        /* ajusta según se vea mejor */
         height: auto;
     }
 
