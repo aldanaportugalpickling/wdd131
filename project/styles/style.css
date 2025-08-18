@@ -470,8 +470,8 @@ footer .social-links a:hover {
     }
 
     .logo img {
-        height: 70px;
-        max-height: 70px;
+        height: 40px;
+        max-height: 40px;
     }
 
     .hero {
@@ -519,25 +519,6 @@ footer .social-links a:hover {
         margin: 1rem auto;
     }
 
-    .radio-group {
-        display: flex;
-        flex-direction: column;
-        /* apilados en vertical en cel */
-        gap: 0.5rem;
-    }
-    
-    .radio-option {
-        display: flex;
-        align-items: center;
-        /* 👈 alinea verticalmente radio y texto */
-        gap: 0.5rem;
-        /* espacio uniforme entre radio y label */
-    }
-    
-    .radio-option input[type="radio"] {
-        margin: 0;
-        /* elimina márgenes raros que desalinean */
-    }
 
     footer .social-links a {
         margin: 0 12px;
