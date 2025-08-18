@@ -484,7 +484,7 @@ footer .social-links a:hover {
 
     .destinations {
         flex-direction: flex;
-        flex-direction: column;
+        justify-content: column;
         align-items: center;
         padding: 1rem;
     }
