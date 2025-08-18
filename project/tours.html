@@ -17,6 +17,9 @@
     <script src="scripts/tours.js" defer></script>
     <script src="scripts/script.js" defer></script>
 
+    <link rel="preload" as="image" href="images/tour-machu-picchu.webp" fetchpriority="high">
+
+
 </head>
 
 <body>
@@ -44,7 +47,7 @@
     <main>
         <section class="tour">
             <h2>Machu Picchu Premium Tour</h2>
-            <img src="images/tour-machu-picchu.webp" alt="Four people in traditional Andean clothing sit on a stone ledge overlooking the mist-covered citadel of Machu Picchu" loading="lazy" width="600" height="300">
+            <img src="images/tour-machu-picchu.webp" alt="Four people in traditional Andean clothing sit on a stone ledge overlooking the mist-covered citadel of Machu Picchu" fetchpriority="high" decoding="async"  width="600" height="300">
             <p>Includes round-trip transportation, entrance tickets, and bilingual guide.</p>
             <button class="details-btn">View Details</button>
             <div class="tour-details hidden">
