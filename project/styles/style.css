@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: rgb(211, 211, 211);
+    background-color: var(--color-secondary);
     font-family: "Open Sans", sans-serif;
 
 }
