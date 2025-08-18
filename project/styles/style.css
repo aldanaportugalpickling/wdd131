@@ -473,8 +473,9 @@ footer .social-links a:hover {
     }
 
     .logo img {
-        height: 50px;
-        max-height: 50px;
+        max-width: 60px;
+        /* ajusta según se vea mejor */
+        height: auto;
     }
 
     .hero {
